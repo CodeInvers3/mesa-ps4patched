@@ -80,6 +80,8 @@ enum radeon_family
    CHIP_HAINAN,
    /* GFX7 (Sea Islands) */
    CHIP_BONAIRE,
+   CHIP_LIVERPOOL,
+   CHIP_GLADIUS,
    CHIP_KAVERI,
    CHIP_KABINI,
    CHIP_HAWAII,         /* Radeon 290, 390 */

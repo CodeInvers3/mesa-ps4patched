@@ -62,7 +62,9 @@
 #define AMDGPU_HAWAII_RANGE     0x28, 0x3C //# 40 <= x < 60
 
 #define AMDGPU_SPECTRE_RANGE    0x01, 0x41 //#   1 <= x < 65
-#define AMDGPU_SPOOKY_RANGE     0x41, 0x81 //#  65 <= x < 129
+#define AMDGPU_SPOOKY_RANGE     0x41, 0x61 //#  65 <= x < 129
+#define AMDGPU_STARSHA_RANGE    0x61, 0x71
+#define AMDGPU_STARSHP_RANGE    0x71, 0x81
 #define AMDGPU_KALINDI_RANGE    0x81, 0xA1 //# 129 <= x < 161
 #define AMDGPU_GODAVARI_RANGE   0xA1, 0xFF //# 161 <= x < max
 
@@ -134,6 +136,8 @@
 
 #define ASICREV_IS_SPECTRE(r)          ASICREV_IS(r, SPECTRE)
 #define ASICREV_IS_SPOOKY(r)           ASICREV_IS(r, SPOOKY)
+#define ASICREV_IS_STARSHA(r)          ASICREV_IS(r, STARSHA)
+#define ASICREV_IS_STARSHP(r)          ASICREV_IS(r, STARSHP)
 #define ASICREV_IS_KALINDI(r)          ASICREV_IS(r, KALINDI)
 #define ASICREV_IS_KALINDI_GODAVARI(r) ASICREV_IS(r, GODAVARI)
 
