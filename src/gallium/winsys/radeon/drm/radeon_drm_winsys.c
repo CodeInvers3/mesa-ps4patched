@@ -502,7 +502,7 @@ static bool do_winsys_init(struct radeon_drm_winsys *ws)
       case CHIP_CAYMAN:
       case CHIP_TAHITI:
       case CHIP_PITCAIRN:
-      case CHIP_BONAIRE
+      case CHIP_BONAIRE:
       case CHIP_LIVERPOOL:
          ws->info.max_se = 2;
          break;
