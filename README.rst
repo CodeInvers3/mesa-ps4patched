@@ -18,7 +18,8 @@ Meson (`docs/meson.rst <https://docs.mesa3d.org/meson.html>`_):
 
 Tested Manjaro 25.0.0
 
-```sh
+.. code-block:: sh
+
 meson setup builddir/ --prefix=/usr \
   -Dbuildtype=release \
   -Doptimization=3 \
@@ -50,7 +51,6 @@ meson setup builddir/ --prefix=/usr \
   -Dmicrosoft-clc=disabled \
   -Dintel-clc=system \
   --wrap-mode=nofallback
-```
 
 Support
 -------
