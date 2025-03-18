@@ -16,41 +16,11 @@ You can find more information in our documentation (`docs/install.rst
 <https://docs.mesa3d.org/install.html>`_), but the recommended way is to use
 Meson (`docs/meson.rst <https://docs.mesa3d.org/meson.html>`_):
 
-Tested Manjaro 25.0.0
-
 .. code-block:: sh
 
-meson setup builddir/ --prefix=/usr \
-  -Dbuildtype=release \
-  -Doptimization=3 \
-  -Dcpp_std=c++17 \
-  -Dplatforms=x11,wayland \
-  -Dgallium-drivers=r300,r600,radeonsi,nouveau,virgl,svga,zink,d3d12,asahi,crocus,swrast,iris \
-  -Dvulkan-drivers=amd,intel,swrast,virtio \
-  -Dvulkan-layers=device-select,overlay \
-  -Degl=enabled \
-  -Dgbm=enabled \
-  -Dglx=dri \
-  -Dglvnd=enabled \
-  -Dllvm=enabled \
-  -Dshared-glapi=enabled \
-  -Dgallium-nine=true \
-  -Dgallium-va=enabled \
-  -Dgallium-vdpau=enabled \
-  -Dgallium-xa=enabled \
-  -Dgallium-extra-hud=true \
-  -Dgallium-opencl=disabled \
-  -Dgallium-rusticl=false \
-  -Dvideo-codecs=all_free \
-  -Dvalgrind=disabled \
-  -Dlibunwind=disabled \
-  -Dlmsensors=disabled \
-  -Dzstd=enabled \
-  -Dxmlconfig=enabled \
-  -Dosmesa=false \
-  -Dmicrosoft-clc=disabled \
-  -Dintel-clc=system \
-  --wrap-mode=nofallback
+  $ meson setup build
+  $ ninja -C build/
+  $ sudo ninja -C build/ install
 
 Support
 -------
