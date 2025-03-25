@@ -5,6 +5,7 @@ meson setup build/ --prefix=/usr --libexecdir=lib --sbindir=bin --auto-features=
   -Dplatforms=x11,wayland \
   -Dgallium-drivers=radeonsi \
   -Dvulkan-drivers=amd \
+  -Damd-gpu-targets=gfx601 \
   -Degl=enabled \
   -Dgbm=enabled \
   -Dglx=dri \
