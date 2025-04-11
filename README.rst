@@ -4,7 +4,7 @@ Build & install
 .. code-block:: sh
 
   $ meson setup build/ --prefix=/usr --libexecdir=lib --sbindir=bin --auto-features=enabled \
-  $ -Dbuildtype=release \
+   -Dbuildtype=release \
   $ -Dplatforms=x11,wayland \
   $ -Dgallium-drivers=r600,radeonsi \
   $ -Dvulkan-drivers=amd \
