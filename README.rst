@@ -30,6 +30,7 @@ Build & install
      -Dxmlconfig=enabled \
      -Dandroid-libbacktrace=disabled
    sudo ninja -C build/ install
+   glxinfo | grep "OpenGL"
 
 Notes
 -------
