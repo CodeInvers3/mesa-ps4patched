@@ -30,6 +30,7 @@ Build & install
      -Dxmlconfig=enabled \
      -Dandroid-libbacktrace=disabled
    sudo ninja -C build/ install
+   export VK_ICD_FILENAMES=/usr/share/vulkan/icd.d/lvp_icd.x86_64.json
    glxinfo | grep "OpenGL"
 
 Notes
