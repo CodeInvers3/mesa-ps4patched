@@ -27,4 +27,5 @@ meson setup build/ --prefix=/usr --libexecdir=lib --sbindir=bin --auto-features=
 #Tested Nobara 41
 ninja -C build/
 sudo ninja -C build/ install
+echo 'export VK_ICD_FILENAMES=/usr/share/vulkan/icd.d/lvp_icd.x86_64.json' >> ~/.bashrc
 glxinfo | grep "OpenGL version"
